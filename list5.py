@@ -5,7 +5,7 @@
 def validate(item):
     count = 0
     for string in item:
-        if string[0] == string[-1]:
+        if len(string) > 1 and string[0] == string[-1]:
             count +=1
     return count
 
